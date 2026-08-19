@@ -1,0 +1,24 @@
+/* SELETTORI CSS per BODY */
+body {
+    font-family: 'Anybody', sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* SELETTORI CSS per NAVIGATION BAR */
+nav {
+    max-width: 2100px;
+    margin: auto;
+}
+
+/* SELETTORI CSS per MAIN CONTENT */
+main {
+    max-width: 2100px;
+    margin: auto;
+}
+
+
+
+

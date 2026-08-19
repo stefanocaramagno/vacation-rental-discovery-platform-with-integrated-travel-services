@@ -1,0 +1,299 @@
+/* SELETTORI CSS per NAVIGATION BAR (Section 2) */
+#flex-container1-nav-section2 {
+    display: flex;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-left: 90px;
+    margin-right: 160px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex-item1-nav-section2 {
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.flex-item1-nav-section2:hover {
+    background-color: #dedcdc;
+}
+
+#flex-container2-nav-section2 {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 12px;
+    margin-right: 15px; 
+}
+
+.flex-item2-nav-section2 {
+    text-align: center;
+    transform: translateY(-90px); 
+    margin: 20px; 
+}
+
+.logo {
+    width: 25px; 
+    height: auto;
+}
+
+.tipologia {
+    font-size: 11px; 
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px; 
+}
+
+#pulsante-scorrimento-a-sinistra,
+#pulsante-scorrimento-a-destra {
+    width: 40px; 
+    height: 40px; 
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 2px solid black;  
+}
+
+#pulsante-filtri {
+    width: 60px;
+    height: 40px;  
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+#pulsante-scorrimento-a-sinistra:hover,
+#pulsante-scorrimento-a-destra:hover,
+#pulsante-filtri:hover {
+    background-color: #dedcdc;
+}
+
+#filtri-modale {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 1100px; 
+    max-width: 100%; 
+    height: 95%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+}
+  
+.filtri-contenuto-modale {
+    background-color: #fefefe;
+    padding: 25px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    overflow-y: auto; 
+    max-height: calc(100% - 100px); 
+}
+
+.pulsante-chiusura-filtri {
+    color: #000000;
+    position: absolute; 
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.pulsante-chiusura-filtri:hover,
+.pulsante-chiusura-filtri:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-filtri {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titolo-header-filtri {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-filtri {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.sezione-filtri {
+    border-top: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+#sezione1-filtri {
+    border-top: none;
+}
+
+.titolo-sezione-filtri {
+    font-weight: bold;    
+    font-size: 20px; 
+}
+
+.flex-container-sezione1-filtri {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item-sezione1-filtri {
+    font-weight: bold;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+}
+
+.flex-container-mini-sezione2-filtri {
+    display: flex;
+}
+
+.flex-item-mini-sezione2-filtri label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.flex-container-mini-sezione3-filtri {
+    display: flex;
+    padding-bottom: 10px;
+    margin-top: 0px; 
+}
+  
+.flex-item-mini-sezione3-filtri {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.flex-item-mini-sezione3-filtri.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container-mini-sezione4-filtri {
+    margin-right: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+.flex-container-mini-sezione5-filtri {
+    display: flex;
+}
+
+.flex-item-mini-sezione5-filtri {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 120px;
+    height: 100px;
+}
+
+.titolo-mini-sezione-filtri {
+    font-weight: bold; 
+}
+
+.flex-container-mini-sezione6-filtri {
+    display: flex;
+}
+
+.flex-item-mini-sezione6-filtri {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.flex-item-mini-sezione6-filtri ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-item-mini-sezione6-filtri li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.flex-item-mini-sezione6-filtri input {
+    transform: scale(2.1); 
+    margin-right: 15px; 
+}
+
+.flex-item-mini-sezione6-filtri label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-filtri {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    z-index: 2; 
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cancella-footer-filtri {
+    font-weight: bold;   
+    padding: 10px; 
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.cancella-footer-filtri:hover {
+    background-color: #dedcdc;
+}
+
+.mostra-alloggi-footer-filtri { 
+    font-weight: bold;  
+    padding: 10px; 
+    background-color: #000000;
+    color:#f9f9f9;
+    border-radius: 10px;
+    margin-right: 20px;
+    float: right;
+}
+
+@media (max-width: 600px) {
+
+    #flex-container1-nav-section2 {
+        margin-right: 100px;
+        border-top: none;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    #pulsante-filtri {
+        display: none;
+    }
+
+}

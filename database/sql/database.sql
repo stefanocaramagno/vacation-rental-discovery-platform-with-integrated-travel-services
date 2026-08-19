@@ -1,0 +1,3 @@
+-- CREAZIONE DATABASE
+CREATE DATABASE IF NOT EXISTS airbnb_database;
+USE airbnb_database;

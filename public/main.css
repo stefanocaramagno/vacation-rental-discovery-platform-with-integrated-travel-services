@@ -1,0 +1,857 @@
+/* SELETTORI CSS per MAIN CONTENT */
+
+/* Section 1 del Main Content */
+#flex-container-main-section1 {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    z-index: 1;
+    display: relative;
+}
+
+.flex-item-main-section1 {
+    text-align: center;
+    margin: 10px; 
+}
+
+.link-immagine {
+    padding: 0px;
+    text-decoration: none;
+    color: #000000;
+    margin: 10px;
+    text-align: center;
+}
+
+.immagine {
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.immagine img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.pulsante-scorrimento {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.pulsante-scorrimento.sinistra {
+    left: 0;
+    margin-left: 10px;
+}
+
+.pulsante-scorrimento.destra {
+    right: 0;
+    margin-right: 10px;
+}
+
+.immagine:hover
+.pulsante-scorrimento {
+    opacity: 1;
+}
+
+#luogo-immobile {
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: start;
+}
+
+#tipologia-host, 
+#intervallo-date {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: start;
+}
+
+#prezzo-a-notte {
+    margin-top: 7px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: start;
+}
+
+.sovrapposizione {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+  
+.etichetta-sovrapposta {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #000000;
+    border-radius: 20px; 
+    font-weight: bold;
+}
+
+.cuore-sovrapposto {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 40px;
+    color: black; 
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; 
+}
+
+#preferiti-modale {
+    display: none;
+    position: fixed;
+    left: 48%;
+    top: 48%;
+    transform: translate(-45%, -45%); 
+    width: 500px; 
+    max-width: 100%; 
+    height: 250px; 
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+    z-index: 2000;
+    display: absolute;
+}
+  
+.preferiti-contenuto-autenticazione {
+    background-color: #fefefe;
+    padding: 25px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    overflow-y: auto; 
+    max-height: calc(100% - 100px); 
+}
+
+.pulsante-chiusura-preferiti {
+    color: #000000;
+    position: absolute; 
+    top: 15px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.pulsante-chiusura-preferiti:hover,
+.pulsante-chiusura-preferiti:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-preferiti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    border-bottom: 1px solid #ccc;
+}
+
+.titolo-header-preferiti {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-preferiti {
+    margin-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titolo-sezione-preferiti {
+    font-weight: bold;    
+    margin-top: 35px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-preferiti {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    padding-bottom: 22px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.footer-preferiti button {
+    font-weight: bold;    
+    font-size: 14px; 
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.footer-preferiti button:hover {
+    background-color: #dedcdc;
+}
+
+/* Section 2 del Main Content */
+#flex-container1-main-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: line;
+    margin-top: 35px;
+    gap: 10px;
+}
+
+.flex-item1-main-section2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#pulsante-mostra-la-mappa-main {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 155px;
+    height: 45px;
+}
+
+#mappa-modale {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 700px; 
+    max-width: 100%; 
+    height: 845px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+}
+  
+.mappa-contenuto-modale {
+    background-color: #fefefe;
+    padding: 25px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    overflow-y: auto; 
+    max-height: calc(100% - 100px); 
+}
+
+.pulsante-chiusura-mappa {
+    color: #000000;
+    position: absolute; 
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.pulsante-chiusura-mappa:hover,
+.pulsante-chiusura-mappa:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-mappa {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titolo-header-mappa {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-mappa {
+    margin-top: 75px;
+    margin-bottom: 0;
+}
+
+#map {
+    position: relative;
+    height: 770px;
+    width: 100%;
+}
+
+#pulsante-visiona-il-meteo-main {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 155px;
+    height: 45px;
+}
+
+#meteo-modale {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 700px; 
+    max-width: 100%; 
+    height: 770px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+}
+  
+.meteo-contenuto-modale {
+    background-color: #fff;
+    padding: 25px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    overflow-y: auto; 
+    max-height: calc(100% - 100px); 
+}
+
+.pulsante-chiusura-meteo {
+    color: #000000;
+    position: absolute; 
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.pulsante-chiusura-meteo:hover,
+.pulsante-chiusura-meteo:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-meteo {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titolo-header-meteo {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-meteo {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#form-meteo {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#form-meteo label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#form-meteo input[type="text"],
+#form-meteo input[type="date"],
+#form-meteo button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form-meteo button {
+    background-color: indianred;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+#form-meteo button:hover {
+    background-color: indianred;
+}
+
+#informazioni-meteo {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+}
+
+#informazioni-meteo h2 {
+    margin-top: 0;
+}
+
+#informazioni-meteo p {
+    margin-bottom: 10px;
+}
+
+#flex-container2-main-section2 {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    flex-direction: line;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+.flex-item2-main-section2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#pulsante-visiona-il-calendario-festivita-main {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 400px;
+    height: 45px;
+}
+
+#calendario-festivita-modale {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 700px; 
+    max-width: 100%; 
+    height: 770px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+}
+  
+.calendario-festivita-contenuto-modale {
+    background-color: #fff;
+    padding: 25px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    overflow-y: auto; 
+    max-height: calc(100% - 100px); 
+}
+
+.pulsante-chiusura-calendario-festivita {
+    color: #000000;
+    position: absolute; 
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.pulsante-chiusura-calendario-festivita:hover,
+.pulsante-chiusura-calendario-festivita:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-calendario-festivita {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titolo-header-calendario-festivita {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-calendario-festivita {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#form-calendario-festivita {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#form-calendario-festivita label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#form-calendario-festivita input[type="text"],
+#form-calendario-festivita input[type="number"],
+#form-calendario-festivita button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form-calendario-festivita button {
+    background-color: indianred;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+#form-calendario-festivita button:hover {
+    background-color: indianred;
+}
+
+#informazioni-calendario-festivita {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+}
+
+#informazioni-calendario-festivita h2 {
+    margin-top: 0;
+}
+
+#informazioni-calendario-festivita p {
+    margin-bottom: 10px;
+}
+
+#lista-festivita {
+    margin-left: 30px;
+}
+
+#pulsante-ricerca-brani-musicali-main {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 155px;
+    height: 45px;
+}
+
+#pulsante-ricerca-brani-musicali-main {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 400px;
+    height: 45px;
+}
+
+#brani-musicali-modale {
+    display: none;
+    position: fixed;
+    z-index: 1000; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 700px; 
+    max-width: 100%; 
+    height: 770px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+}
+  
+.brani-musicali-contenuto-modale {
+    background-color: #fff;
+    padding: 25px; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    overflow-y: auto; 
+    max-height: calc(100% - 100px); 
+}
+
+.pulsante-chiusura-brani-musicali {
+    color: #000000;
+    position: absolute; 
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.pulsante-chiusura-brani-musicali:hover,
+.pulsante-chiusura-brani-musicali:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-brani-musicali {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fefefe; 
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titolo-header-brani-musicali {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-brani-musicali {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+#form-brani-musicali {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#form-brani-musicali label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#form-brani-musicali input[type="text"],
+#form-brani-musicali input[type="number"],
+#form-brani-musicali button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form-brani-musicali button {
+    background-color: indianred;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+#form-brani-musicali button:hover {
+    background-color: indianred;
+}
+
+#informazioni-brani-musicali {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+}
+
+#informazioni-brani-musicali h2 {
+    margin-top: 0;
+}
+
+#informazioni-brani-musicali p {
+    margin-bottom: 10px;
+}
+
+#lista-brani {
+    margin-left: 30px;
+}
+
+.brano {
+    font-weight: bold;
+    width: 400px; 
+    margin-left: 10px;
+}
+
+.brano img {
+    width: 200px; 
+    height: auto; 
+    margin-bottom: 10px; 
+    border-radius: 10px;
+}
+
+.pulsante-aggiungi {
+    width: 75px;
+    height: 40px;  
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin-left: 30px;
+}
+
+.pulsante-aggiungi:hover {
+    background-color: #dedcdc;
+}
+
+@media (max-width: 600px) {
+
+    #preferiti-modale {
+        width: 350px; 
+    }
+
+    .footer-preferiti button {
+        width: 86%;
+    }
+
+    .immagine {
+        width: 380px; 
+        height: 380px; 
+    }
+
+    #luogo-immobile {
+        font-size: 20px;
+    }
+    
+    #tipologia-host, 
+    #intervallo-date {
+        font-size: 20px;
+    }
+    
+    #prezzo-a-notte {
+        font-size: 20px;
+    }
+   
+    .etichetta-sovrapposta {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+    .cuore-sovrapposto {
+        font-size: 70px;
+    }
+
+    #mappa-modale {
+        max-width: 90%; 
+    }
+
+    #meteo-modale {
+        max-width: 90%; 
+    }
+
+    .main-meteo {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #calendario-festivita-modale {
+        max-width: 90%; 
+    }
+
+    .main-calendario-festivita {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .festa {
+        margin-left: -20px;
+    }
+
+    #brani-musicali-modale {
+        max-width: 90%; 
+    }
+
+    .main-brani-musicali {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}

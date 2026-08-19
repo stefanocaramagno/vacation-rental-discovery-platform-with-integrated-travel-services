@@ -1,0 +1,124 @@
+/* SELETTORI CSS per NAVIGATION BAR (Section 1) */
+#flex-container-nav-section1 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.2);
+    width: 60%; 
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.flex-item-nav-section1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+    border-right: 1px solid #ccc;
+}
+
+.flex-item-nav-section1 label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.flex-item-nav-section1 input {
+    width: calc(100% - 20px);
+    padding: 5px; 
+    margin-top: 5px; 
+    border-radius: 5px; 
+    border: none; 
+}
+
+.menu-a-tendina {
+    position: relative;
+    display: inline-block;
+}
+
+.contenuto-menu-a-tendina {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px); 
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+.menu-a-tendina:hover 
+.contenuto-menu-a-tendina {
+    display: block;
+}
+
+.categoria form {
+    display: flex;
+}
+
+.categoria label {
+    width: 150px; 
+    margin-right: 10px; 
+}
+
+.categoria input {
+    flex: 1; 
+    width: 45px;
+    border-radius: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+}
+
+#categoria1 {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc; 
+}
+
+#categoria2, 
+#categoria3 {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc; 
+}
+
+#categoria4 {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+#pulsante-ricerca {
+    border-right: none;
+}
+
+.flex-item-nav-section1 button {
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0);  
+    background-color: #eee8e7;
+} 
+
+.flex-item-nav-section1 img {
+    height: 30px;
+    width: 30px;
+    padding: 7px;
+}
+
+@media (max-width: 600px) {
+
+    .nav_section1 {
+        display: none;
+    }
+    
+}

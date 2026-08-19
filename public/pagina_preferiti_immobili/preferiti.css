@@ -1,0 +1,105 @@
+/* SELETTORI CSS per BODY */
+body {
+    font-family: 'Anybody', sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* SELETTORI CSS per NAVIGATION BAR */
+nav {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* SELETTORI CSS per MAIN CONTENT */
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#intestazione-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 12px;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+}
+
+#nome-sezione {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.pulsante-torna-indietro {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px 22px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pulsante-torna-indietro:hover {
+    background-color: #f4f4f4;
+    border-color: black;
+}
+
+.pulsante-torna-indietro a {
+    color: black; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.pulsante-torna-indietro:hover a {
+    color: black; 
+}
+
+#flex-container-main-section1 {
+    padding-top: 30px;
+}
+
+.dettagli-immobile {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+.pulsante-rimuovi {
+    width: 70px;
+    height: 40px;  
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.pulsante-rimuovi:hover {
+    background-color: #dedcdc;
+}
+
+/* SELETTORI CSS per FOOTER */
+#footer {
+    background-color: rgb(243, 242, 242);
+    padding-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+-- CREAZIONE TABELLA: PREFERITI
+CREATE TABLE IF NOT EXISTS PREFERITI_BRANI_MUSICALI (
+    id INTEGER AUTO_INCREMENT,
+    id_utente INTEGER,
+    nome_brano_musicale VARCHAR(255),
+    copertina_brano_musicale VARCHAR(255),
+    FOREIGN KEY(id_utente) REFERENCES UTENTI(id) ON UPDATE CASCADE,
+    PRIMARY KEY(id)
+) Engine = 'InnoDB';
+
